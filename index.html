@@ -16,64 +16,50 @@
     console.log(!false || true);    
 	</script>	
   <img src="./images/cat1.jpg" alt="My test image" />
-  
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <title>Layer 1</title>
-  <path id="svg_1" d="m216.51693,208.58437l16.42465,0l5.07534,-4.20164l5.07535,4.20164l16.42465,0l-13.2878,2.59673l5.07561,4.20164l-13.2878,-2.5968l-13.2878,2.5968l5.07561,-4.20164l-13.2878,-2.59673z" stroke="#000" fill="#fff"/>
-  <path id="svg_2" d="m224.477,228.63762l65.69863,0l20.30138,-53.47538l20.30139,53.47538l65.69862,0l-53.15121,33.04922l20.30243,53.47538l-53.15123,-33.05012l-53.15122,33.05012l20.30244,-53.47538l-53.15123,-33.04922z" stroke="#000" fill="#fff"/>
-  <path id="svg_3" d="m197.61202,185.4282l32.84931,0l10.15069,-35.14097l10.15069,35.14097l32.8493,0l-26.5756,21.71806l10.15121,35.14097l-26.57561,-21.71865l-26.57561,21.71865l10.15122,-35.14097l-26.57561,-21.71806z" stroke="#000" fill="#fff"/>
-  <path id="svg_4" d="m240.39704,172.33593l53.47562,0l16.52438,-15.27868l16.52439,15.27868l53.47561,0l-43.26261,9.44263l16.52523,15.27868l-43.26263,-9.44289l-43.26262,9.44289l16.52524,-15.27868l-43.26262,-9.44263z" stroke="#000" fill="#fff"/>
-  <path id="svg_5" d="m341.88697,154.27198l33.23128,0l10.26872,-37.81474l10.26873,37.81474l33.23128,0l-26.88462,23.37052l10.26925,37.81474l-26.88463,-23.37116l-26.88463,23.37116l10.26926,-37.81474l-26.88463,-23.37052z" stroke="#000" fill="#fff"/>
-  <path id="svg_6" d="m395.61699,276.2137l16.80662,0l5.19337,-29.41147l5.19338,29.41147l16.80662,0l-13.59682,18.17708l5.19364,29.41147l-13.59682,-18.17757l-13.59682,18.17757l5.19365,-29.41147l-13.59682,-18.17708z" stroke="#000" fill="#fff"/>
-  <path id="svg_7" d="m313.03197,254.12089l16.04268,0l4.95731,-15.27868l4.95732,15.27868l16.04268,0l-12.97878,9.44263l4.95757,15.27868l-12.97879,-9.44289l-12.97878,9.44289l4.95757,-15.27868l-12.97878,-9.44263z" stroke="#000" fill="#fff"/>
- </g>
-</svg>
 <nav class="container"></nav>
 	 <a href="test1.html"title="了解 have cat 使命以及如何参与贡献的最佳站点。"target="_blank">点击这里了解更多</a>
 </nav>
 <form action="./submit_page" method="get">
-  <h2>Subscribe to our newsletter</h2>
+  <h2>Subscribe to our website</h2>
   <p>
-    <label for="name">Name (required):</label>
-    <input type="text" value="Bob" name="name" id="name" required />
+    <label for="name">Cat Name (required):</label>
+    <input type="text" value="Doubao" name="name" id="name" required />
   </p>
   <p>
-    <label for="email">Email (required):</label>
-    <input type="email" name="email" id="email" required />
+    <label for="Weight">Weight (required): Kg</label>
+    <input type="text" name="Weight" id="Weight" required />
   </p>
   <fieldset>
-    <legend>Choose hotel room type:</legend>
+    <legend>Choose cat gender:</legend>
     <div>
       <input
         type="radio"
-        id="hotelChoice1"
-        name="hotel"
-        value="economy"
+        id="female"
+        name="gender"
+        value="female"
         checked />
-      <label for="hotelChoice1">Economy (+$0)</label>
+      <label for="female">Female</label>
   
-      <input type="radio" id="hotelChoice2" name="hotel" value="superior" />
-      <label for="hotelChoice2">Superior (+$50)</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
   
       <input
         type="radio"
-        id="hotelChoice3"
-        name="hotel"
-        value="penthouse"
+        id="unknown"
+        name="gender"
+        value="unknown"
         disabled />
-      <label for="hotelChoice3">Penthouse (+$150)</label>
+      <label for="unknown">Unknown</label>
     </div>
   </fieldset>
-  <label for="transport">How are you getting here:</label>
-<select name="transport" id="transport">
-  <option value="">--Please choose an option--</option>
-  <option value="plane">Plane</option>
-  <option value="bike">Bike</option>
-  <option value="walk">Walk</option>
-  <option value="bus">Bus</option>
-  <option value="train">Train</option>
-  <option value="jetPack">Jet pack</option>
+  <label for="Species">Choose cat species:</label>
+  <select name="Species" id="Species">
+    <option value="">--Please choose an cat species--</option>
+  <option value="Siamese">Siamese</option>
+  <option value="Maine Coon">Maine Coon</option>
+  <option value="Persian">Persian</option>
+  <option value="Siberian">Siberian</option>
+  <option value="Scottish Fold">Scottish Fold</option>
 </select>
   <p>
     <button>Sign me up!</button>
